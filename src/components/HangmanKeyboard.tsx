@@ -33,8 +33,7 @@ const HangmanKeyboard = () => {
       {keys.map((key) => (
         <button
           key={key}
-          disabled
-          className='w-[100px] border-[3px] border-black bg-none aspect-square text-[40px] capitalize p-2 font-bold cursor-pointer disabled:opacity-30 [&:not(:disabled)]:hocus:bg-[hsl(200,_100%,_75%)]'>
+          className='w-[100px] border-[3px] border-black bg-none aspect-square text-[40px] capitalize p-2 font-bold cursor-pointer [&:not(:disabled)]:hocus:bg-[hsl(200,_100%,_75%)]'>
           {key}
         </button>
       ))}
