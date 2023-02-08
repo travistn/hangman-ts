@@ -47,7 +47,11 @@ const App = () => {
       <HangmanDrawing numberOfGuesses={incorrectLetters.length} />
       <HangmanWord guessedLetters={guessedLetters} wordToGuess={wordToGuess} />
       <div className='self-stretch'>
-        <HangmanKeyboard />
+        <HangmanKeyboard
+          activeLetters={guessedLetters.filter((letter) => wordToGuess.includes(letter))}
+          inactiveLetters={incorrectLetters}
+          addGuessedLetter={addGuessedLetter}
+        />
       </div>
     </div>
   );
