@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 import HangmanDrawing from './components/HangmanDrawing';
 import HangmanWord from './components/HangmanWord';
+import HangmanKeyboard from './components/HangmanKeyboard';
 import './App.css';
 import words from './wordList.json';
 
@@ -17,6 +18,9 @@ const App = () => {
       <div className='text-[24px]'>Lose Win</div>
       <HangmanDrawing />
       <HangmanWord />
+      <div className='self-stretch'>
+        <HangmanKeyboard />
+      </div>
     </div>
   );
 };
